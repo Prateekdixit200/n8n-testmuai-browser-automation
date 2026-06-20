@@ -1,0 +1,117 @@
+{
+  "name": "My workflow",
+  "nodes": [
+    {
+      "parameters": {},
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        128,
+        0
+      ],
+      "id": "5f63450f-cabe-4cca-b95f-7754ec573983",
+      "name": "When clicking ‘Execute workflow’"
+    },
+    {
+      "parameters": {
+        "promptType": "define",
+        "text": "Go to \"https://news.ycombinator.com\", find the title and link of the top trending story, and output it clearly. Then release the session.",
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.agent",
+      "typeVersion": 3.1,
+      "position": [
+        416,
+        0
+      ],
+      "id": "0c7ddfab-b706-4b19-87a5-3bbc13ac6da9",
+      "name": "AI Agent"
+    },
+    {
+      "parameters": {
+        "modelName": "models/gemini-2.5-flash-lite",
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.lmChatGoogleGemini",
+      "typeVersion": 1.1,
+      "position": [
+        288,
+        208
+      ],
+      "id": "bd3bd1d3-38f8-45fb-8975-71efc0e26cf0",
+      "name": "Google Gemini Chat Model",
+      "credentials": {
+        "googlePalmApi": {
+          "id": "LstLxEtzkCsEQTiB",
+          "name": "Google Gemini(PaLM) Api account"
+        }
+      }
+    },
+    {
+      "parameters": {},
+      "type": "n8n-nodes-testmuai.testmuaiAgentTool",
+      "typeVersion": 1,
+      "position": [
+        560,
+        208
+      ],
+      "id": "102f216e-cd27-4f4e-b697-edcdbe10ea37",
+      "name": "TestMu AI (Formerly LambdaTest) Agent",
+      "credentials": {
+        "testmuaiApi": {
+          "id": "7PqueaaqhwTzdx8D",
+          "name": "TestMu AI (Formerly LambdaTest) account"
+        }
+      }
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "When clicking ‘Execute workflow’": {
+      "main": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Google Gemini Chat Model": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "TestMu AI (Formerly LambdaTest) Agent": {
+      "ai_tool": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1",
+    "binaryMode": "separate"
+  },
+  "versionId": "9a53ac42-c996-4582-b44f-1d685faa7fa3",
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": "d0cdb452d985c3e7cc3aeb45146b82763b1fd86605ee1ed982b66f6e8e0fd1ae"
+  },
+  "nodeGroups": [],
+  "id": "BxwHAewarubDnlkN",
+  "tags": []
+}
