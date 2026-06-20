@@ -15,6 +15,10 @@ An AI-driven automated web scraper built using **n8n** workflows and **TestMu AI
 ### 3. Final Extracted Output Data
 <img width="1665" height="757" alt="image" src="https://github.com/user-attachments/assets/7b94ac59-869c-4b70-af81-583fc5b1eaea" />
 
+
+<img width="1919" height="811" alt="image" src="https://github.com/user-attachments/assets/369eaa0b-d4ba-499f-8a39-eb8ef7827ff5" />
+
+
 ---
 
 ## 🛠️ Project Stack
