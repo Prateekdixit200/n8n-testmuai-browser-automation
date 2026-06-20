@@ -2,6 +2,18 @@
 
 An AI-driven automated web scraper built using **n8n** workflows and **TestMu AI (LambdaTest Browser Cloud)**.
 
+## 📸 Project Visuals
+
+### 1. The n8n Workflow Canvas
+![n8n Workflow Canvas Layout](https://raw.githubusercontent.com/Prateekdixit200/n8n-testmuai-browser-automation/main/your-canvas-screenshot.png)
+
+### 2. Live Cloud Browser Execution
+![TestMu AI Remote Browser Session](https://raw.githubusercontent.com/Prateekdixit200/n8n-testmuai-browser-automation/main/your-browser-screenshot.png)
+
+### 3. Final Extracted Output Data
+![Scraped Output Results Data](https://raw.githubusercontent.com/Prateekdixit200/n8n-testmuai-browser-automation/main/your-output-screenshot.png)
+---
+
 ## 🛠️ Project Stack
 * **Workflow Engine:** n8n Cloud
 * **AI Brain:** Google Gemini (`gemini-2.0-flash`)
