@@ -30,4 +30,10 @@ An AI-driven automated web scraper built using **n8n** workflows and **TestMu AI
 1. **Trigger:** The flow runs manually using the canvas entry execution point.
 2. **Browser Cloud Initialization:** The agent dynamically provisions a clean, remote **Chrome** browser instance hosted on **Windows 11** via the TestMu AI API.
 3. **Autonomous Scraping:** It navigates to Hacker News, parses the web structures, extracts the top trending story title and target link without pre-coded selectors, and returns the output.
-4. **Session Cleanup:** Once complete, it invokes a clean resource release command to terminate the browser immediately.
+
+## 📥 How to Import and Run
+1. Download the `My workflow.json` file from this repository.
+2. Open your n8n canvas, click the **`...`** menu in the top right corner, and select **Import from file...**.
+3. Plug in your own Google Gemini API key and TestMu AI credentials, and hit **Execute workflow**!
+5. **Session Cleanup:** Once complete, it invokes a clean resource release command to terminate the browser immediately.
+
