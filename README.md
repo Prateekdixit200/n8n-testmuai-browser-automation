@@ -5,13 +5,16 @@ An AI-driven automated web scraper built using **n8n** workflows and **TestMu AI
 ## 📸 Project Visuals
 
 ### 1. The n8n Workflow Canvas
-![n8n Workflow Canvas Layout](https://raw.githubusercontent.com/Prateekdixit200/n8n-testmuai-browser-automation/main/your-canvas-screenshot.png)
+<img width="1660" height="714" alt="image" src="https://github.com/user-attachments/assets/6a89d48f-11b5-45ae-b85e-64e240d47687" />
+
 
 ### 2. Live Cloud Browser Execution
-![TestMu AI Remote Browser Session](https://raw.githubusercontent.com/Prateekdixit200/n8n-testmuai-browser-automation/main/your-browser-screenshot.png)
+<img width="1673" height="741" alt="image" src="https://github.com/user-attachments/assets/a9a0d74e-4820-4846-93f1-dd0dda4ccc4e" />
+
 
 ### 3. Final Extracted Output Data
-![Scraped Output Results Data](https://raw.githubusercontent.com/Prateekdixit200/n8n-testmuai-browser-automation/main/your-output-screenshot.png)
+<img width="1665" height="757" alt="image" src="https://github.com/user-attachments/assets/7b94ac59-869c-4b70-af81-583fc5b1eaea" />
+
 ---
 
 ## 🛠️ Project Stack
